@@ -1,0 +1,23 @@
+{
+  "name": "gioui",
+  "version": "1.0.0",
+  "description": "New Custom UI Kit",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiorgiKumelashvili/GIOUI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GiorgiKumelashvili/GIOUI/issues"
+  },
+  "homepage": "https://github.com/GiorgiKumelashvili/GIOUI#readme",
+  "devDependencies": {
+    "sass": "^1.27.0"
+  }
+}
