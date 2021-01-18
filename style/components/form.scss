@@ -1,8 +1,8 @@
-$form-border-radius         : 0.2rem;
-$form-border-height         : 2rem;
-$form-border-width          : 20rem;
-$form-inside-input          : #F6F7FA;
-$form-inside-input-focused  : #d6d6d6;
+$form-border-radius: 0.2rem;
+$form-border-height: 2rem;
+$form-border-width: 20rem;
+$form-inside-input: #f6f7fa;
+$form-inside-input-focused: #d6d6d6;
 
 // input {
 //     border-radius       : $form-border-radius;
@@ -17,21 +17,20 @@ $form-inside-input-focused  : #d6d6d6;
 //     }
 // }
 
-
 // For now
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    border-radius       : $form-border-radius;
-    border              : 1.6px solid #AEAEAE;
-    height              : $form-border-height;
-    width               : $form-border-width;
-    padding             : 1rem 0.5rem;
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+	border-radius: $form-border-radius;
+	border: 1.6px solid #aeaeae;
+	height: $form-border-height;
+	width: $form-border-width;
+	padding: 1rem 0.5rem;
 
-    &:focus {
-        border-color    : #2000b1;
-        outline         : none;
-    }
+	&:focus {
+		border-color: #2000b1;
+		outline: none;
+	}
 }
 
 // Old radio
@@ -65,44 +64,50 @@ input[type="password"] {
 //     }
 // }
 .radio {
-    display: inline-flex;
-    align-items: center;
-    position: relative;
+	display: inline-flex;
+	align-items: center;
+	position: relative;
 }
 
 .custom-radio-main {
-    width   : 1.2rem;
-    height  : 1.2rem;
+	width: 1.2rem;
+	height: 1.2rem;
 
-    border: 2px solid #d8e4e2;
-    border-radius: 50%;
-    margin-right: 0.5rem;
-    box-sizing: border-box;
-    padding: 2px;
+	border: 2px solid #d8e4e2;
+	border-radius: 50%;
+	margin-right: 0.5rem;
+	box-sizing: border-box;
+	padding: 2px;
 
-    position: relative;
-    left: 0.3px;
+	position: relative;
+	left: 0.3px;
 
-    &::after {
-        content: "";       
-        align-self: center;
-        width: 100%;
-        height: 100%;
-        display: block;
-        border-radius: 50%;
-        transform: scale(0);
-        transition: transform 0.15s;
-    }
+	&::after {
+		content: '';
+		align-self: center;
+		width: 100%;
+		height: 100%;
+		display: block;
+		border-radius: 50%;
+		transform: scale(0);
+		transition: transform 0.15s;
+	}
 }
 
-.radio-primary::after { background-color: blue;}
-.radio-secondary::after { background-color: grey;}
-.radio-danger::after { background-color: red;}
+.radio-primary::after {
+	background-color: blue;
+}
+.radio-secondary::after {
+	background-color: grey;
+}
+.radio-danger::after {
+	background-color: red;
+}
 
 .custom-radio-input {
-    display: none;
+	display: none;
 
-    &:checked + .custom-radio-main::after{
-        transform: scale(1);
-    }
+	&:checked + .custom-radio-main::after {
+		transform: scale(1);
+	}
 }
